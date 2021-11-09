@@ -2,6 +2,7 @@ name: GitHub Actions Demo
 on: [push]
 jobs:
   Explore-GitHub-Actions:
+    name: explore-github-actions
     runs-on: ubuntu-latest
     steps:
       - id: checkout
@@ -43,5 +44,5 @@ jobs:
             middle_name: The
             Last_Name: Octocat
         # if: ${{ jobs.Explore-GitHub-Actions.print.FIRST_NAME == 'Mona' }}
-        run: echo "Hello $FIRST_NAME $middle_name $Last_Name, today is Monday!"
+        run: echo ${{ jobs.Explore-GitHub-Actions.name }}
         
