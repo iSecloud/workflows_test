@@ -28,6 +28,7 @@ jobs:
       - name: Bash Test
         run: |
           echo "$GITHUB_REPOSITORY"
+          echo "$github.repository"
         shell: bash
       
       - name: Python Test
