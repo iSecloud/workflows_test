@@ -20,4 +20,4 @@ jobs:
       - name: Get color
         run: |
           echo "The selected color is ${{ steps.random-color-generator.outputs.SELECTED_COLOR }}"
-          echo "::notice file=..\test.txt,line=1,col=5,endColumn=7::Missing semicolon"
+          echo "::notice file=../test.txt,line=1,col=5,endColumn=7::Missing semicolon"
