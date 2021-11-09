@@ -9,4 +9,4 @@ jobs:
           FIRST_NAME: Mona
           LAST_NAME: Octocat
         run: |
-          echo This is ${{ FIRST_NAME }} ${{ LAST_NAME }}
+          echo This is ${{ env.FIRST_NAME }} ${{ env.LAST_NAME }}
