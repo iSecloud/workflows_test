@@ -32,13 +32,15 @@ jobs:
           echo "$GITHUB_REF"
           echo "${{ github.ref }}"
         shell: bash
+        env: 
+          TEST: WOCHAO
       
       - name: "Hello world when it's Monday"
         id: print
         env:
-            FIRST_NAME: Mona
-            middle_name: The
-            Last_Name: Octocat
+          FIRST_NAME: Mona
+          middle_name: The
+          Last_Name: Octocat
         # if: ${{ jobs.Explore-GitHub-Actions.print.FIRST_NAME == 'Mona' }}
-        run: echo "${{ env.FIRST_NAME }}"
+        run: echo "${{ env.TEST }}"
         
