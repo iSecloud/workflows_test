@@ -44,5 +44,5 @@ jobs:
           middle_name: The
           Last_Name: Octocat
         # if: ${{ jobs.Explore-GitHub-Actions.print.FIRST_NAME == 'Mona' }}
-        run: echo "${{ Explore-GitHub-Actions.name }}" 
+        run: echo "${{ steps.print.name }}" 
         
