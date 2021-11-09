@@ -23,6 +23,5 @@ jobs:
 
       - name: Python Test
         run: |
-          python
-          print("HelloWorld")
+          python ../test.py
         shell: python
