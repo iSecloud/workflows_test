@@ -4,6 +4,8 @@ jobs:
   Explore-GitHub-Actions:
     name: explore-github-actions
     runs-on: ubuntu-latest
+    env:
+      TEST: WOCCCCCC!!
     steps:
       - id: checkout
         name: Checkout
