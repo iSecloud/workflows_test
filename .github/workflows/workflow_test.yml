@@ -27,5 +27,4 @@ jobs:
 
       - name: Python Test
         run: |
-          python ../../test.py
-        shell: python
+          ls
