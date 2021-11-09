@@ -4,9 +4,9 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - id: checkout
-        name: Checkout
-        uses: actions/checkout@v2
+      # - id: checkout
+      #   name: Checkout
+      #   uses: actions/checkout@v2
 
       - name: My first action
         env:
