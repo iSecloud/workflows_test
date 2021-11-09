@@ -29,6 +29,7 @@ jobs:
         run: |
           python test.py
           echo "$PATH"
+          ls | sed "s:^:`pwd`/:"
         shell: bash
       
       - name: Python Test
