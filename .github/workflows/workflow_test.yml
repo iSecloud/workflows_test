@@ -29,7 +29,7 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' }}
         run: |
           echo "$GITHUB_REF"
-          echo "$github.ref"
+          echo "${{ github.ref }}"
         shell: bash
       
       - name: Python Test
@@ -42,6 +42,6 @@ jobs:
             FIRST_NAME: Mona
             middle_name: The
             Last_Name: Octocat
-        if: ${{ jobs.Explore-GitHub-Actions.print.FIRST_NAME == 'Mona' }}
+        # if: ${{ jobs.Explore-GitHub-Actions.print.FIRST_NAME == 'Mona' }}
         run: echo "Hello $FIRST_NAME $middle_name $Last_Name, today is Monday!"
         
