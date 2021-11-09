@@ -26,7 +26,9 @@ jobs:
           echo "The selected color is ${{ steps.random-color-generator.outputs.SELECTED_COLOR }}"
 
       - name: Bash Test
-        run: python test.py
+        run: |
+          python test.py
+          echo "$PATH"
         shell: bash
       
       - name: Python Test
