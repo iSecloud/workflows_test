@@ -26,7 +26,7 @@ jobs:
           echo "The selected color is ${{ steps.random-color-generator.outputs.SELECTED_COLOR }}"
 
       - name: Bash Test
-        if: ${{ $GITHUB_REF == 'refs/heads/main' }}
+        if: ${{ GITHUB_REF == 'refs/heads/main' }}
         run: |
           echo "$GITHUB_REF"
           echo "$github.ref"
