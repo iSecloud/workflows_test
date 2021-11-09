@@ -18,4 +18,6 @@ jobs:
         run: echo '::set-output name=SELECTED_COLOR::green'
         id: random-color-generator
       - name: Get color
-        run: echo "The selected color is ${{ steps.random-color-generator.outputs.SELECTED_COLOR }}"
+        run: |
+          echo "The selected color is ${{ steps.random-color-generator.outputs.SELECTED_COLOR }}"
+          echo "::notice file=..\test.txt,line=1,col=5,endColumn=7::Missing semicolon"
