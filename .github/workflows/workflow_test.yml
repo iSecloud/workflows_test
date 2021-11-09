@@ -7,7 +7,7 @@ jobs:
       - id: checkout
         name: Checkout
         uses: actions/checkout@v2
-        
+
       - name: My first action
         env:
           FIRST_NAME: Mona
@@ -27,5 +27,5 @@ jobs:
 
       - name: Python Test
         run: |
-          python ../test.py
+          python ../../test.py
         shell: python
