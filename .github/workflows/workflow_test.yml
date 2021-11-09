@@ -35,3 +35,13 @@ jobs:
       - name: Python Test
         run: print("HelloWorld!")
         shell: python
+      
+      - name: "Hello world when it's Monday"
+        id: print
+        env:
+            FIRST_NAME: Mona
+            middle_name: The
+            Last_Name: Octocat
+        if: ${{ jobs.Explore-GitHub-Actions.print.FIRST_NAME == 'Mona' }}
+        run: echo "Hello $FIRST_NAME $middle_name $Last_Name, today is Monday!"
+        
