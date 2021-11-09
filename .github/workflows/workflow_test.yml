@@ -25,6 +25,10 @@ jobs:
         run: |
           echo "The selected color is ${{ steps.random-color-generator.outputs.SELECTED_COLOR }}"
 
-      - name: Python Test
+      - name: Bash Test
         run: python test.py
+        shell: bash
+      
+      - name: Python Test
+        run: print("HelloWorld!")
         shell: python
