@@ -44,5 +44,5 @@ jobs:
           middle_name: The
           Last_Name: Octocat
         # if: ${{ jobs.Explore-GitHub-Actions.print.FIRST_NAME == 'Mona' }}
-        run: echo "${{ github.event.repository.default_branch }}" 
+        run: echo "${GITHUB_REF#refs/*/}"
         
